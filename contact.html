@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="kontakte.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Zeyada&display=swap" rel="stylesheet">
+    <title>SUP WORLD</title>
+    <link rel="icon" href="Dateien/welle.png">
+</head>
+<body>
+    <div id="menu"></div>
+
+    <div id="header">
+        <h1 id="logo">SUP-World</h1>
+        <a class='link' href='/' id='start'>Start</a>
+        <a class='link' href='/mieten' id='mieten'>Mieten</a>
+        <a class='link' href='/kaufen' id='kaufen'>Kaufen</a>
+        <a class='link' href='/kontakte' id='kontakte'>Kontakte</a>
+        <div id="close"></div>
+    </div>
+
+    <div id="container">
+        <div id="text"><h1>Senden Sie Uns doch ein Nachricht</h1> 
+                        <p>Wir Versuchen uns so Schnell wie möglich bei ihnen zu Melden. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat excepturi quidem optio reiciendis vitae! Doloremque beatae officia dolore eaque, dolor explicabo natus nam similique nostrum? Ducimus sunt deserunt aut iure.</p>
+        </div>
+        <div id="form">
+            <form action="https://formspree.io/f/meqwvqpp" method="post">
+                <input name="vorname" class="input" type="text" placeholder="Vorname"><br>
+                <input name="nachname" class="input" type="text" placeholder="Nachname"><br>
+                <input name="e-mail" class="input" type="text" placeholder="E-Mail"><br>
+                <label  for="">Nachricht</label><br>
+                <textarea name="nachricht" id="ms" cols="50" rows="10"></textarea>
+                <input type="submit" value="Senden">
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+</body>
+
+<script>
+    var menu = document.getElementById("menu")
+    var header = document.getElementById("header");
+    
+    menu.addEventListener("click", function(){
+    header.style.display="flex";
+
+    var close = document.getElementById("close");
+    close.addEventListener("click", function(){
+        header.style.display="none";
+    })
+
+    
+    })
+</script>
+</html>
